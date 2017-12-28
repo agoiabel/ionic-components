@@ -3,12 +3,103 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>My First List</ion-title>
+    <ion-title>List Page</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+
   <ion-list>
+    <ion-item>
+      <ion-thumbnail item-start><img src="assets/imgs/card-saopaolo.png" alt=""></ion-thumbnail>
+      <h2>Header</h2>
+      <p>lorem lorem lorem lorem </p>
+      <button ion-button item-end>View</button>
+    </ion-item>
+  </ion-list>
+  
+  <!-- <ion-list>
+    <ion-item-sliding *ngFor="let item of items">
+
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/card-saopaolo.png" alt="">
+        </ion-avatar>
+        <h2>{{ item.title }}</h2>
+      </ion-item>
+
+      <ion-item-options side="left">
+        <button ion-button color="primary">
+          <ion-icon name="text"></ion-icon>
+          Text
+        </button>
+        <button ion-button color="secondary">
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+      </ion-item-options>
+
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          <ion-icon name="mail"></ion-icon>
+          Email
+        </button>
+      </ion-item-options>
+
+    </ion-item-sliding>
+  </ion-list> -->
+
+
+  <!-- <p>
+    List with group
+  </p> -->
+
+  <!-- <ion-item-group *ngFor="let item of items">
+    <ion-item-divider>{{ item.title }}</ion-item-divider>
+    <ion-item><ion-icon name="{{ item.icon }}"></ion-icon></ion-item>
+    <ion-item>{{ item.note }}</ion-item>
+  </ion-item-group> -->
+
+
+  <!-- <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-avatar item-start>
+        <img src="assets/imgs/card-saopaolo.png" alt="">
+      </ion-avatar>
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.note }}</p>
+    </ion-item>
+  </ion-list> -->
+
+  <!-- <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-icon name="{{ item.icon }}" item-start></ion-icon>
+      {{ item.title }}
+      <ion-icon name="{{ item.icon }}" item-end></ion-icon>      
+    </ion-item>
+  </ion-list> -->
+
+
+  <!-- <p>
+     List with line
+  </p>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+      {{ item.note }}
+    </button>
+  </ion-list> -->
+
+
+  <!-- <p>
+    List without line
+  </p>
+  <ion-list no-lines>
+    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+      {{ item.note }}
+    </button>
+  </ion-list> -->
+
+  <!-- <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <ion-icon name="{{item.icon}}" item-left></ion-icon>
       {{item.title}}
@@ -16,5 +107,5 @@
         {{item.note}}
       </div>
     </button>
-  </ion-list>
+  </ion-list> -->
 </ion-content>

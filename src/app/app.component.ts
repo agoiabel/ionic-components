@@ -1,3 +1,4 @@
+import { ActionSheetPage } from './../pages/action-sheet/action-sheet';
 import { Component, ViewChild } from '@angular/core';
 
 import { Platform, MenuController, Nav } from 'ionic-angular';
@@ -7,6 +8,18 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AlertPage } from '../pages/alert/alert';
+import { BadgePage } from '../pages/badge/badge';
+import { ButtonPage } from '../pages/button/button';
+import { CardPage } from '../pages/card/card';
+import { CheckboxPage } from '../pages/checkbox/checkbox';
+import { DateTimePage } from '../pages/datetime/datetime';
+import { FabPage } from '../pages/fab/fab';
+import { GridPage } from '../pages/grid/grid';
+import { InputPage } from '../pages/input/input';
+import { LoadingPage } from '../pages/loading/loading';
+import { ModalPage } from '../pages/modal/modal';
+import { SlidesPage } from '../pages/slides/slides';
 
 
 @Component({
@@ -30,7 +43,20 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'List', component: ListPage },
+      { title: 'Action Sheet', component: ActionSheetPage },
+      { title: 'Alert', component: AlertPage },
+      { title: 'Badge', component: BadgePage },
+      { title: 'Button', component: ButtonPage },
+      { title: 'Card', component: CardPage },
+      { title: 'Checkbox', component: CheckboxPage },
+      { title: 'DateTime', component: DateTimePage },
+      { title: 'Fab', component: FabPage },
+      { title: 'Grid', component: GridPage },
+      { title: 'Input', component: InputPage },
+      { title: 'Loading', component: LoadingPage },
+      { title: 'Modal', component: ModalPage },
+      { title: 'Slide', component: SlidesPage },
     ];
   }
 
